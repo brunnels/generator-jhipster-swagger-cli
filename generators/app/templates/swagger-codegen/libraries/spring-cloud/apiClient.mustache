@@ -1,0 +1,10 @@
+package {{basePackage}}.{{baseName}};
+
+import {{basePackage}}.AuthorizedFeignClient;
+import {{package}}.{{apiClassname}};
+
+{{=<% %>=}}
+@AuthorizedFeignClient(name="${feignclient.<%baseName%>.service-name:<%baseName%>}")
+<%={{ }}=%>
+public interface {{apiClassname}}Client extends {{apiClassname}} {
+}
